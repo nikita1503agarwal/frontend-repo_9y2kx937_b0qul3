@@ -2,25 +2,21 @@ import { ArrowRight, Sparkles } from 'lucide-react';
 
 export default function CTASection() {
   return (
-    <section className="py-14">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="rounded-2xl border border-neutral-200 dark:border-neutral-800 p-8 bg-gradient-to-tr from-neutral-50 to-white dark:from-neutral-950 dark:to-neutral-900">
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
-            <div>
-              <div className="inline-flex items-center gap-2 text-sm text-indigo-600 dark:text-indigo-400">
-                <Sparkles className="h-4 w-4" /> Mulai dalam 3 langkah
-              </div>
-              <h3 className="mt-2 text-2xl font-bold text-neutral-900 dark:text-white">Daftar, input bisnis, dan catat transaksi pertamamu</h3>
-              <p className="mt-1 text-neutral-600 dark:text-neutral-300">Kembangkan bisnis dengan insight keuangan yang akurat.</p>
-            </div>
-            <div className="flex gap-3">
-              <a href="/auth" className="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-neutral-900 text-white dark:bg-white dark:text-neutral-900">
-                Daftar Gratis <ArrowRight className="h-4 w-4" />
-              </a>
-              <a href="/transactions/new" className="inline-flex items-center gap-2 px-4 py-2 rounded-md border border-neutral-200 dark:border-neutral-800 text-neutral-800 dark:text-neutral-200 hover:bg-neutral-100 dark:hover:bg-neutral-800">
-                Catat Transaksi
-              </a>
-            </div>
+    <section id="get-started" className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-16">
+      <div className="relative overflow-hidden rounded-2xl border border-neutral-200 dark:border-neutral-800 p-8 bg-gradient-to-br from-blue-50 to-violet-50 dark:from-neutral-900 dark:to-neutral-900">
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(650px_circle_at_0%_0%,rgba(59,130,246,0.15),transparent_60%),radial-gradient(650px_circle_at_100%_100%,rgba(139,92,246,0.15),transparent_60%)]" />
+        <div className="relative flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+          <div>
+            <h3 className="text-xl sm:text-2xl font-bold">Mulai gratis, siap dalam 5 menit</h3>
+            <p className="mt-2 text-neutral-700 dark:text-neutral-300 max-w-2xl">Buat akun, isi profil bisnis, dan catat transaksi pertamamu. Kamu bisa ekspor laporan kapan saja.</p>
+          </div>
+          <div className="flex flex-wrap gap-3">
+            <a href="/auth" className="inline-flex items-center gap-2 rounded-lg bg-neutral-900 dark:bg-white text-white dark:text-neutral-900 px-4 py-2.5 hover:opacity-90">
+              <Sparkles size={18} /> Daftar Sekarang
+            </a>
+            <a href="/transactions/new" className="inline-flex items-center gap-2 rounded-lg border border-neutral-300 dark:border-neutral-700 px-4 py-2.5 hover:bg-neutral-100 dark:hover:bg-neutral-800">
+              Catat Transaksi <ArrowRight size={18} />
+            </a>
           </div>
         </div>
       </div>
